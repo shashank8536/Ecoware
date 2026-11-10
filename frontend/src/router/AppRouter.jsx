@@ -11,6 +11,13 @@ import CitizenDashboard from '../pages/citizen/CitizenDashboard'
 import MyComplaintsPage from '../pages/citizen/MyComplaintsPage'
 import ReportGarbagePage from '../pages/citizen/ReportGarbagePage'
 import NotFoundPage from '../pages/NotFoundPage'
+import StaffLayout from '../layouts/StaffLayout'
+import StaffDashboard from '../pages/staff/StaffDashboard'
+import MyTasksPage from '../pages/staff/MyTasksPage'
+import TaskHistoryPage from '../pages/staff/TaskHistoryPage'
+import StaffSchedulePage from '../pages/staff/StaffSchedulePage'
+import NotificationsPage from '../pages/staff/NotificationsPage'
+import StaffProfilePage from '../pages/staff/StaffProfilePage'
 
 function AppRouter() {
   return (
@@ -29,6 +36,15 @@ function AppRouter() {
         <Route path="schedule" element={<CollectionSchedulePage />} />
         <Route path="profile" element={<ProfilePage />} />
         <Route path="feedback" element={<FeedbackPage />} />
+      </Route>
+
+      <Route path="/staff" element={<StaffLayout />}>
+        <Route index element={<StaffDashboard />} />
+        <Route path="tasks" element={<MyTasksPage />} />
+        <Route path="history" element={<TaskHistoryPage />} />
+        <Route path="schedule" element={<StaffSchedulePage />} />
+        <Route path="notifications" element={<NotificationsPage />} />
+        <Route path="profile" element={<StaffProfilePage />} />
       </Route>
     </Routes>
   )
