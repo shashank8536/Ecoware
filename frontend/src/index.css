@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* EcoWare brand theme — professional green & white */
+@theme {
+  --color-primary: #16a34a;        /* main green */
+  --color-primary-dark: #15803d;   /* hover / darker green */
+  --color-primary-light: #dcfce7;  /* soft green background */
+  --color-primary-ink: #14532d;    /* dark green for headings */
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  @apply bg-white text-gray-800 antialiased;
+}
