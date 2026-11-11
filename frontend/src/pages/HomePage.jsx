@@ -51,7 +51,7 @@ function HomePage() {
             Smart Garbage Collection for a{' '}
             <span className="text-primary">Greener Tomorrow</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-700 [text-shadow:0_1px_1px_rgba(255,255,255,0.7),0_0_18px_rgba(255,255,255,0.5)]">
+          <p className="mx-auto mt-6 max-w-2xl text-base text-[#174B35] [text-shadow:0_1px_2px_rgba(255,255,255,0.85),0_0_16px_rgba(255,255,255,0.6)] sm:text-lg">
             EcoWare connects residents, sanitation workers, and authorities on one
             platform — report waste, optimize pickups, and track community impact
             together.
